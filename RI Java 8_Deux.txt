@@ -1,70 +1,7 @@
 /**************************************************************************************/
 /********************************** Chapitre 3 ****************************************/
 /**************************************************************************************/
-
-
-/************** fonction affichage surchargée **************/
-
-public void affichage(boolean francais)
-	{
-		if (francais)
-		{
-			System.out.println("nom : " + nom);
-			System.out.println("prenom : " + prenom);
-			System.out.println("age : " + calculAge());
-		}
-		else
-		{
-			System.out.println("name : " + nom);
-			System.out.println("first name : " + prenom);
-			System.out.println("age : " + calculAge());
-		}
-			
-	}
-
-/************** deuxième fonction affichage surchargée illégale **************/
-
-public void affichage(boolean majuscule)
-	{
-		if (majuscule)
-		{
-			System.out.println("nom : " + nom.toUpperCase());
-			System.out.println("prenom : " + prenom.toUpperCase());
-			System.out.println("age : " + calculAge());
-		}
-		else
-		{
-			System.out.println("nom : " + nom.toLowerCase());
-			System.out.println("prenom : " + prenom.toLowerCase());
-			System.out.println("age : " + calculAge());
-		}
-	}	
-
-/*********** fonction avec un nombre quelconque de paramètres **************/
-
-public void affichage(String...couleurs)
-{
-	  	if (couleurs==null)
-		{
-			System.out.println("pas de couleur");
-			return;
-		}
-		switch (couleurs.length)
-		{
-		case 1:
-			System.out.println("une couleur");
-			break;
-		case 2:
-			System.out.println("deux couleurs");
-			break;
-		case 3:
-			System.out.println("trois couleurs");
-			break;
-		default :
-			System.out.println("plus de trois couleurs");
-		}
-}
-	
+	exemple-5
 /************** les accesseurs  ***************/
 
 public class Personne 
