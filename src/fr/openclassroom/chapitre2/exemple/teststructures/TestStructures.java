@@ -38,6 +38,6 @@ public class TestStructures
                 break;
             System.out.println(compteur);
         }
-        
+
     }
 }
